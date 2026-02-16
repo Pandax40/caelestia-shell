@@ -26,23 +26,6 @@ RowLayout {
         Layout.bottomMargin: root.padding
         Layout.leftMargin: root.padding * 2
 
-        value1: Math.min(1, SystemUsage.gpuTemp / 90)
-        value2: SystemUsage.gpuPerc
-
-        label1: root.displayTemp(SystemUsage.gpuTemp)
-        label2: `${Math.round(SystemUsage.gpuPerc * 100)}%`
-
-        sublabel1: qsTr("GPU temp")
-        sublabel2: qsTr("Usage")
-    }
-
-    Resource {
-        Layout.alignment: Qt.AlignVCenter
-        Layout.topMargin: root.padding
-        Layout.bottomMargin: root.padding
-
-        primary: true
-
         value1: Math.min(1, SystemUsage.cpuTemp / 90)
         value2: SystemUsage.cpuPerc
 
