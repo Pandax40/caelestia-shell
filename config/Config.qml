@@ -358,6 +358,7 @@ Singleton {
     function serializeSession(): var {
         return {
             enabled: session.enabled,
+            showGif: session.showGif,
             dragThreshold: session.dragThreshold,
             vimKeybinds: session.vimKeybinds,
             icons: {

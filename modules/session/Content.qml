@@ -46,6 +46,7 @@ Column {
     }
 
     AnimatedImage {
+        visible: Config.session.showGif
         width: Config.session.sizes.button
         height: Config.session.sizes.button
         sourceSize.width: width
@@ -56,7 +57,7 @@ Column {
         speed: Appearance.anim.sessionGifSpeed
         source: Paths.absolutePath(Config.paths.sessionGif)
     }
-
+    
     SessionButton {
         id: hibernate
 

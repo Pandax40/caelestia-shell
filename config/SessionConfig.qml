@@ -2,6 +2,7 @@ import Quickshell.Io
 
 JsonObject {
     property bool enabled: true
+    property bool showGif: true
     property int dragThreshold: 30
     property bool vimKeybinds: false
     property Icons icons: Icons {}
